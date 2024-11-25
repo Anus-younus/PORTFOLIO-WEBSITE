@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Navlink from './navlink'
+import Navlink from './navLink'
 import { motion } from "framer-motion"
 import { list } from 'postcss'
 
