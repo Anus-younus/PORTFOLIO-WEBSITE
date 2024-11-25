@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { motion } from "framer-motion"
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -18,13 +19,13 @@ const Homepage = () => {
       {/* TEXT CONTAINER */}
       <div className="h-1/2 flex flex-col md:w-full md:h-full gap-4 items-center justify-center">
         {/* TITTLE */}
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">Passionate Nextjs & React Developer with Redux.</h1>
         {/* DESC */}
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique autem vel soluta illum velit rem provident minus minima hic?</p>
+        <p className="">Crafting modern, responsive web solutions with a focus on performance, usability, and innovation. Building Seamless Digital Experiences with Next.js and React.</p>
         {/* BUTTONS */}
         <div className="w-full flex gap-4">
-          <button className="rounded-lg p-2 md:p-4 ring-1 ring-black bg-black text-white">View My Work</button>
-          <button className="rounded-lg p-2 md:p-4 ring-1 ring-black">Contact Me</button>
+          <Link href={"/portfolio"} className="rounded-lg p-2 md:p-4 ring-1 ring-black bg-black text-white">View My Work</Link>
+          <Link href={"/contact"} className="rounded-lg p-2 md:p-4 ring-1 ring-black">Contact Me</Link>
         </div>
       </div>
     </div>

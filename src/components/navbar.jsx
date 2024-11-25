@@ -79,30 +79,30 @@ const Navbar = () => {
                 ))}
             </div>
             {/* LOGO */}
-            <div className='md:hidden lg:flex w-1/3 xl:justify-center'>
+            <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
                 <Link href={'/'} className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'>
-                    <span className='text-white mr-1'>Lama</span>
+                    <span className='text-white mr-1'>Anus</span>
                     <span className='w-12 h-8 rounded bg-white text-black flex items-center justify-center'>.dev</span>
                 </Link>
             </div>
             {/* SOCIAL LINKS */}
             <div className='hidden md:flex gap-4 w-1/3'>
-                <Link href={''}>
+                <Link href={'https://github.com/Anus-younus'}>
                     <Image src="/github.png" alt="" width={24} height={24} />
                 </Link>
-                <Link href={''}>
+                {/* <Link href={''}>
                     <Image src="/dribbble.png" alt="" width={24} height={24} />
-                </Link>
-                <Link href={''}>
+                </Link> */}
+                <Link href={'https://www.instagram.com/anusbandija.21/'}>
                     <Image src="/instagram.png" alt="" width={24} height={24} />
                 </Link>
-                <Link href={''}>
+                <Link href={'https://www.facebook.com/profile.php?id=61562337688701'}>
                     <Image src="/facebook.png" alt="" width={24} height={24} />
                 </Link>
-                <Link href={''}>
+                {/* <Link href={''}>
                     <Image src="/pinterest.png" alt="" width={24} height={24} />
-                </Link>
-                <Link href={''}>
+                </Link> */}
+                <Link href={'https://www.linkedin.com/in/anus-younus/'}>
                     <Image src="/linkedin.png" alt="" width={24} height={24} />
                 </Link>
             </div>
