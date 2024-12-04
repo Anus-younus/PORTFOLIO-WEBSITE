@@ -42,7 +42,7 @@ const ContactPage = () => {
           <span>My mail address is:</span>
           <input type="text" className='bg-transparent border-b-2 border-b-black outline-none' />
           <span>Regrads</span>
-          <button className='bg-purple-300 rounded font-semibold text-gray-600 p-1 xl:p-4'>Send</button>
+          <button onClick={() => {console.log("Hello")}} className='bg-purple-300 rounded font-semibold text-gray-600 p-1 xl:p-4'>Send</button>
           {success && <span className='text-green-600 font-semibold'>Your message has been sent succesfully</span>}
           {error && <span className='text-red-600 font-semibold'>Something went wrong</span>}
         </form>

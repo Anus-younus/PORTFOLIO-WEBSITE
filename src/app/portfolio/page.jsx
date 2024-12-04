@@ -8,35 +8,19 @@ const items = [
   {
     id: 1,
     color: "from-blue-300 to-violet-300",
-    title: "NextJS Medium Blog",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sapiente adipisci consectetur expedita deleniti esse suscipit dolores, modi accusamus sit.",
-    img: "/portfolio.jfif",
-    link: "http://lama.dev"
+    title: "Real Estate Animated Website",
+    desc: "I will make this real Estate Animated Website By using HTML, CSS, TypeScript, React, Next Tailwind Seniors Guid me also",
+    img: "/project-1.png",
+    link: "https://house-booking-animated-website-yigq.vercel.app/"
   },
   {
     id: 2,
     color: "from-violet-300 to-purple-300",
-    title: "NextJS Medium Blog",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sapiente adipisci consectetur expedita deleniti esse suscipit dolores, modi accusamus sit.",
-    img: "/portfolio.jfif",
-    link: "http://lama.dev"
-  },
-  {
-    id: 3,
-    color: "from-blue-300 to-violet-300",
-    title: "NextJS Medium Blog",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sapiente adipisci consectetur expedita deleniti esse suscipit dolores, modi accusamus sit.",
-    img: "/portfolio.jfif",
-    link: "http://lama.dev"
-  },
-  {
-    id: 4,
-    color: "from-purple-300 to-red-300",
-    title: "NextJS Medium Blog",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sapiente adipisci consectetur expedita deleniti esse suscipit dolores, modi accusamus sit.",
-    img: "/portfolio.jfif",
-    link: "http://lama.dev"
-  },
+    title: "Home Booking Portal",
+    desc: "I will make this Home Booking Portal Website By using HTML, CSS, JavaScript, React Seniors Guid me also.",
+    img: "/project-2.png",
+    link: "https://real-state-animated-website.netlify.app/"
+  }
 ]
 
 const PortfolioPage = () => {
@@ -57,20 +41,20 @@ const PortfolioPage = () => {
         <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
 
           <motion.div style={{ x }} className='flex'>
-            <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r from-blue-300 to-red-300`} />
+            <div className={`h-screen w-screen flex justify-center bg-gradient-to-r from-blue-300 to-red-300`} />
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id + item.title}
               >
                 <div className="flex flex-col gap-1 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-6xl">
+                  <h1 className="text-2xl mb-5 font-bold md:text-4xl lg:text-6xl xl:text-6xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-60 h-48 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[500px] xl:h-[320px]">
-                    <Image src="/portfolio.jfif" alt="" fill />
+                  <div className="relative w-96 h-48 md:w-96 md:h-64 lg:w-[600px] lg:h-[350px] xl:w-[600px] xl:h-[320px]">
+                    <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="w-60 md:w-96 lg:w-[500px] xl:w-[500px] text-sm lg:text-lg">
+                  <p className="w-60 mt-4 md:w-96 lg:w-[500px] xl:w-[500px] text-sm lg:text-lg">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
